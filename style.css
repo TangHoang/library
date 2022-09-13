@@ -1,18 +1,29 @@
+:root{
+    --header-text-color: black;
+    --main-color: #fefefe;
+    --button-color: #bc4749;
+    --background-color: #DCDCDC;
+}
+
 body {
     margin: 0;
     font-family: 'Quicksand', Helvetica, sans-serif;
+    color: var(--header-text-color);
 }
 
 header{
     width: auto;
     height: 8vh;
-
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
-    background-color: #fffcfb;
+    color: var(--header-text-color);
+    background-color: var(--main-color);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 main{
@@ -25,7 +36,7 @@ main{
     justify-content:flex-start;
     align-items: center;
 
-    background-color: #efeff3;
+    background-color: var(--background-color);
 }
 
 .newButton-container{
@@ -38,8 +49,9 @@ main{
     height: 100%;
     border: none;
     border-radius: 10px;
-    background-color: forestgreen;
+    background-color: #353535;
     font-size: 4.5vmin;
+    color: whitesmoke;
 }
 
 .grid-container{
@@ -64,14 +76,16 @@ main{
     justify-content: space-evenly;
     align-items: center;
 
+    color: var(--header-text-color);
     border-radius: 20px;
-    background-color: #fffcfb;
+    background-color: var(--main-color);
 }
 
 .book-card{
     height: 100%;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .1);
-    z-index: 100;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .3);
+    z-index: 1;
+    color: var(--header-text-color);
 }
 
 .book-card .title{
@@ -89,10 +103,13 @@ main{
     width: auto;
     min-width: 30%;
     border: 1px solid rgba(240, 20, 20, 0.1);
-    background-color: lightgray;
+    background-color: var(--button-color);
     border-radius: 9px;
     font-size: 4vmin;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+    color: black;
+}
+    
 
 .status-button-bg{
     background-color: darkseagreen !important;
@@ -102,10 +119,11 @@ main{
     height: 50%;
     width: 30%;
     border: 1px solid rgba(240, 20, 20, 0.1);
-    background-color: lightgray;
+    background-color: var(--button-color);
     border-radius: 9px;
     font-size: 4vmin;
     margin-bottom: 10px;
+    color: black;
 }
 
 footer{
@@ -117,7 +135,7 @@ footer{
     justify-content: center;
     align-items: center;
     
-    background-color: #fefefe;
+    background-color: var(--main-color);
 }
 
 footer h2 {
@@ -145,13 +163,14 @@ footer h2 {
     bottom: 50px;
     right: 10vw;
     left: 10vw;
-    z-index: 1001;
+    z-index: 2;
 
     border-radius: 10px;
-    background-color: white;
+    background-color: #fefefe;
 }
 
 .wrapper{
+    height: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -169,7 +188,7 @@ footer h2 {
 
     border: none;
     outline: none;
-    background-color: lightgray;
+    background-color: rgb(234, 228, 228);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -179,6 +198,7 @@ footer h2 {
     align-items: center;
 }
 .form-container #title, .form-container #author{
+    height: auto;
     padding-top: 10px;
     margin-left: 10px;
     font-size: 5vmin;
@@ -196,6 +216,7 @@ input[type="checkbox"]{
 #submit-button{
     width: 32%;
     height: 13%;
+    min-height: 30px;
     align-self: center;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -206,9 +227,10 @@ input[type="checkbox"]{
 }
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=text] {
+    height: auto;
     width: 90%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 8px;
+    margin: 5px 0 12px 0;
     border: none;
     background: #f1f1f1;
     border-radius: 15px;
