@@ -16,7 +16,7 @@
         <div class="newButton-container">
             <button onclick="openForm()" id="add-button">+ Add book</button>
         </div>
-        <form action="/action_page.php" class="form-container">
+        <form class="form-container">
             <div class="wrapper">
                 <label for="title" id="title"><b>Title</b></label>
                 <button type="button" id="close-button" onclick="closeForm()">
@@ -25,17 +25,17 @@
                 </button>
             </div>
             
-            <input type="text" placeholder="Title" name="title" required>
+            <input type="text" placeholder="Title" name="title" class="input-title" required>
         
             <label for="author" id="author"><b>Author</b></label>
-            <input type="text" placeholder="Author" name="author" required>
+            <input type="text" placeholder="Author" name="author" class="input-author" required>
             
             <div>
                 <label for="reading-status" id="reading-status"><b>Have you read it?</b></label>
-                <input type="checkbox" id="reading-status" name="reading-status" required>
+                <input type="checkbox" id="reading-status" name="reading-status" class="input-status">
             </div>
 
-            <button type="submit" id="submit-button" onclick="closeForm()">Submit</button>
+            <button type="button" id="submit-button" onclick="closeForm()">Submit</button>
 
         </form>
         <div class="grid-container">

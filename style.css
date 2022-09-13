@@ -49,6 +49,8 @@ main{
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto;
+
+    gap: 10px;
 }
 
 .grid-container div{
@@ -68,7 +70,8 @@ main{
 
 .book-card{
     height: 100%;
-    
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .1);
+    z-index: 100;
 }
 
 .book-card .title{
@@ -81,8 +84,18 @@ main{
     padding-bottom: 20px;
 }
 
-.book-card .isRead{
-    height: 100%;
+.book-card .status-button{
+    height: 50%;
+    width: auto;
+    min-width: 30%;
+    border: 1px solid rgba(240, 20, 20, 0.1);
+    background-color: lightgray;
+    border-radius: 9px;
+    font-size: 4vmin;
+    margin-bottom: 10px;}
+
+.status-button-bg{
+    background-color: darkseagreen !important;
 }
 
 .book-card .remove-button{
@@ -132,7 +145,7 @@ footer h2 {
     bottom: 50px;
     right: 10vw;
     left: 10vw;
-    z-index: 9;
+    z-index: 1001;
 
     border-radius: 10px;
     background-color: white;
