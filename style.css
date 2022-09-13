@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: auto;
+    height: 8vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fffcfb;
+}
+
+main{
+    width: auto;
+    min-height: 90vh;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: center;
+
+    background-color: #efeff3;
+}
+
+.newButton-container{
+    height: 5vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.newButton-container button{
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: forestgreen;
+    font-size: 4.5vmin;
+}
+
+.grid-container{
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+}
+
+.grid-container div{
+    width: 80%;
+    height: 20vh;
+
+    justify-self: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #fffcfb;
+}
+
+.book-card{
+    height: 100%;
+    
+}
+
+.book-card .title{
+    height: 100%;
+    font-size: 5vmin;
+}
+
+.book-card .author{
+    height: 33%;
+    padding-bottom: 20px;
+}
+
+.book-card .isRead{
+    height: 100%;
+}
+
+.book-card .remove-button{
+    height: 100%;
+    width: 30%;
+    border: 1px solid rgba(240, 20, 20, 0.2);
+    background-color: lightgray;
+    border-radius: 9px;
+    font-size: 4.5vmin;
+}
+
+footer{
+    width: auto;
+    height: 30px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #fefefe;
+}
+
+footer h2 {
+    font-size: 2vmin;
+}
+
+.form-popup {
+    display: none;
+    
+  }
+
+.overlay-shadow{
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, .5);
+}
+
+/* Add styles to the form container */
+.form-container {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 35vh;
+    width: 80vw;
+    top: 150px;
+    bottom: 50px;
+    right: 10vw;
+    left: 10vw;
+    z-index: 9;
+
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.form-container #title, .form-container #author{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 5vmin;
+}
+
+.form-container #reading-status{
+    margin-left: 10px;
+    font-size: 4.5vmin;
+}
+input[type="checkbox"]{
+    vertical-align:middle;
+    list-style-type: none;
+}
+
+#submit-button{
+    width: 32%;
+    height: 13%;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: forestgreen;
+    font-size: 4.5vmin;
+}
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
