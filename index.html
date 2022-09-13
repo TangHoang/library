@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library</title>
+</head>
+<body>
+    <header>
+        <h1>Book Library</h1>
+    </header>
+
+    <main>
+        <div class="newButton-container">
+            <button onclick="openForm()">+ Add book</button>
+        </div>
+        <form action="/action_page.php" class="form-container">
+        
+            <label for="title" id="title"><b>Title</b></label>
+            <input type="text" placeholder="Title" name="title" required>
+        
+            <label for="author" id="author"><b>Author</b></label>
+            <input type="text" placeholder="Author" name="author" required>
+            
+            <div>
+                <label for="reading-status" id="reading-status"><b>Have you read it?</b></label>
+                <input type="checkbox" id="reading-status" name="reading-status" required>
+            </div>
+
+            <button type="submit" id="submit-button" onclick="closeForm()">Submit</button>
+
+        </form>
+        <div class="grid-container">
+            
+        </div>
+    </main>
+
+    <footer>
+        <h2>Made by TangHoang</h2>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
