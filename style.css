@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Helvetica, sans-serif;
 }
 
 header{
@@ -86,12 +86,13 @@ main{
 }
 
 .book-card .remove-button{
-    height: 100%;
+    height: 50%;
     width: 30%;
-    border: 1px solid rgba(240, 20, 20, 0.2);
+    border: 1px solid rgba(240, 20, 20, 0.1);
     background-color: lightgray;
     border-radius: 9px;
-    font-size: 4.5vmin;
+    font-size: 4vmin;
+    margin-bottom: 10px;
 }
 
 footer{
@@ -135,9 +136,35 @@ footer h2 {
 
     border-radius: 10px;
     background-color: white;
-
 }
 
+.wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 20px;
+    margin-right: 10px;
+
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button-icon{
+    display: flex;
+    align-items: center;
+}
 .form-container #title, .form-container #author{
     padding-top: 10px;
     margin-left: 10px;
